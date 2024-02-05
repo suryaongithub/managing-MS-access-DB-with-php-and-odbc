@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./props/favicon.png">
+    <title>Error Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .error-container {
+            text-align: center;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #000; /* Black header text */
+        }
+
+        h3 {
+            color: #777; /* Gray paragraph text */
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #d9534f; /* Red button */
+            color: #fff; /* White button text */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #c9302c; /* Darker red on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>Unable to access debugger page</h1>
+        <h3>if you are not the onwer or the moderator of this server please dont try to access this page</h3>
+        <button onclick="redirectToIndex()">Back</button>
+    </div>
+
+    <script>
+        function redirectToIndex() {
+            window.location.href = "../../index.html";
+        }
+    </script>
+</body>
+</html>

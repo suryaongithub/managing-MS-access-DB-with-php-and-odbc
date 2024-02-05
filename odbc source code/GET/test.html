@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #aeffd7;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #00000056;
+            text-align: left;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Question Table</h2>
+    
+    <table id="questionTable">
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Concept</th>
+                <th>Chapter</th>
+                <th>Subject</th>
+                <th>Difficulty</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <script>
+        // add another line in the table
+        function add(q,c,ch,s,d){
+            var t = document.getElementById('questionTable');
+            var ln = t.insertRow(-1);
+            
+            ln.insertCell(0).innerHTML=q;
+            ln.insertCell(1).innerHTML=c;
+            ln.insertCell(2).innerHTML=ch;
+            ln.insertCell(3).innerHTML=s;
+            ln.insertCell(4).innerHTML=d;
+
+            return "done";
+        }
+
+    </script>
+
+</body>
+</html>
